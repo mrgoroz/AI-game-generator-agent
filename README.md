@@ -281,9 +281,4 @@ Interviewers love seeing:
 # ✅ Status
 
 **Phase 1 (completed):** Project skeleton + GameGeneratorService + README
-**Phase 2 (next):** Want me to generate full code for all microservices?
-
-Just tell me:
-➡️ *"Generate all remaining microservices"* or
-➡️ *"Generate Docker compose"* or
-➡️ *"Generate CI/CD"*
+**Phase 2 (next):** Generate microservices

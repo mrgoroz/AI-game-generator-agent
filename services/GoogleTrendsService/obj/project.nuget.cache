@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zcvu8pjTtWk=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Golan\\Documents\\AI-game-generator-agent\\services\\GoogleTrendsService\\GoogleTrendsService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Golan\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.11\\microsoft.aspnetcore.openapi.9.0.11.nupkg.sha512",
+    "C:\\Users\\Golan\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

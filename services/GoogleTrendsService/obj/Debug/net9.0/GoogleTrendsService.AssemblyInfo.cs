@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GoogleTrendsService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+872ee292b4495c565fcef4e6396176ad5dfaa768")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d58e89ae4c9d82a8bb34436fca49136ecd5a29a")]
 [assembly: System.Reflection.AssemblyProductAttribute("GoogleTrendsService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GoogleTrendsService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

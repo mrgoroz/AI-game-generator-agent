@@ -1,6 +1,6 @@
 using System;
-using Postgrest.Attributes;
-using Postgrest.Models;
+using Supabase.Postgrest.Attributes;
+using Supabase.Postgrest.Models;
 
 namespace GameIdeaService.Infrastructure.Models
 {

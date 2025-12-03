@@ -10,6 +10,7 @@
         "dependencies": {
           "MassTransit.RabbitMQ": "8.5.7",
           "Microsoft.AspNetCore.OpenApi": "9.0.11",
+          "SharedKernel": "1.0.0",
           "Supabase": "1.1.1",
           "Swashbuckle.AspNetCore": "10.0.1",
           "postgrest-csharp": "3.5.1"
@@ -372,6 +373,17 @@
             "fileVersion": "5.1.1.0"
           }
         }
+      },
+      "SharedKernel/1.0.0": {
+        "dependencies": {
+          "MassTransit.Abstractions": "8.5.7"
+        },
+        "runtime": {
+          "SharedKernel.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -688,6 +700,11 @@
       "sha512": "sha512-VpQV6b8HRnw6bFFIPTOOMtOxba3/viH9K2U2LdOYNjQ2b2HrLHxjodmJr3nPwyNSrtrRPr1RDwOMJ5qqlPnCVg==",
       "path": "websocket.client/5.1.1",
       "hashPath": "websocket.client.5.1.1.nupkg.sha512"
+    },
+    "SharedKernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

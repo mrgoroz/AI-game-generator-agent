@@ -1,0 +1,13 @@
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.csproj.AssemblyReference.cache
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.AssemblyInfoInputs.cache
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.AssemblyInfo.cs
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.sourcelink.json
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\refint\SharedKernel.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\SharedKernel.pdb
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\bin\Debug\net9.0\SharedKernel.deps.json
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\bin\Debug\net9.0\SharedKernel.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\bin\Debug\net9.0\SharedKernel.pdb
+C:\Users\Golan\Documents\AI-game-generator-agent\services\SharedKernel\obj\Debug\net9.0\ref\SharedKernel.dll

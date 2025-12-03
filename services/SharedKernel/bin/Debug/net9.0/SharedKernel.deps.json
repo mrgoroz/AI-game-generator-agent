@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "SharedKernel/1.0.0": {
+        "dependencies": {
+          "MassTransit.Abstractions": "8.5.7"
+        },
+        "runtime": {
+          "SharedKernel.dll": {}
+        }
+      },
+      "MassTransit.Abstractions/8.5.7": {
+        "runtime": {
+          "lib/net9.0/MassTransit.Abstractions.dll": {
+            "assemblyVersion": "8.5.7.0",
+            "fileVersion": "8.5.7.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SharedKernel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MassTransit.Abstractions/8.5.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HdS4nzARrW34F+ftZpfykSEwmvEFD8Z+lRulwakt0YU9xg4IE3bUmbls15vuOxfC2YDtcr7y3+SQYzXx6fG/vA==",
+      "path": "masstransit.abstractions/8.5.7",
+      "hashPath": "masstransit.abstractions.8.5.7.nupkg.sha512"
+    }
+  }
+}

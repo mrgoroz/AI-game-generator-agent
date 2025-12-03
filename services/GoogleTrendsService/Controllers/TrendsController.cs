@@ -1,4 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using MassTransit;
+using GoogleTrendsService.Services;
+using SharedKernel.Events;
 
 namespace GoogleTrendsService.Controllers;
 
@@ -6,22 +9,43 @@ namespace GoogleTrendsService.Controllers;
 [Route("[controller]")]
 public class TrendsController : ControllerBase
 {
-    private static readonly string[] MockTrends = new[]
-    {
-        "AI Agents", "Microservices", "DotNet 9", "Google Gemini", "Antigravity"
-    };
-
+    private readonly ITrendsService _trendsService;
+    private readonly IPublishEndpoint _publishEndpoint;
     private readonly ILogger<TrendsController> _logger;
 
-    public TrendsController(ILogger<TrendsController> logger)
+    public TrendsController(
+        ITrendsService trendsService,
+        IPublishEndpoint publishEndpoint,
+        ILogger<TrendsController> logger)
     {
+        _trendsService = trendsService;
+        _publishEndpoint = publishEndpoint;
         _logger = logger;
     }
 
-    [HttpGet(Name = "GetTrends")]
-    public IEnumerable<string> Get()
+    [HttpPost("fetch")]
+    public async Task<IActionResult> FetchAndPublishTrends()
     {
-        _logger.LogInformation("Fetching trends...");
-        return MockTrends;
+        try
+        {
+            var trends = await _trendsService.FetchTrendingTopicsAsync();
+
+            foreach (var trend in trends)
+            {
+                _logger.LogInformation("Publishing trend: {TrendName}", trend);
+
+                await _publishEndpoint.Publish<ITrendDiscovered>(new
+                {
+                    TrendName = trend
+                });
+            }
+
+            return Ok(new { Message = $"Published {trends.Count} trends", Trends = trends });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error fetching trends");
+            return StatusCode(500, "Internal Server Error");
+        }
     }
 }

@@ -735,6 +735,19 @@
             "related": ".xml"
           }
         }
+      },
+      "SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MassTransit.Abstractions": "8.5.7"
+        },
+        "compile": {
+          "bin/placeholder/SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharedKernel.dll": {}
+        }
       }
     }
   },
@@ -2046,12 +2059,18 @@
         "websocket.client.5.1.1.nupkg.sha512",
         "websocket.client.nuspec"
       ]
+    },
+    "SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../SharedKernel/SharedKernel.csproj",
+      "msbuildProject": "../SharedKernel/SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "MassTransit.RabbitMQ >= 8.5.7",
       "Microsoft.AspNetCore.OpenApi >= 9.0.11",
+      "SharedKernel >= 1.0.0",
       "Supabase >= 1.1.1",
       "Swashbuckle.AspNetCore >= 10.0.1",
       "postgrest-csharp >= 3.5.1"
@@ -2088,7 +2107,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Golan\\Documents\\AI-game-generator-agent\\services\\SharedKernel\\SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\Golan\\Documents\\AI-game-generator-agent\\services\\SharedKernel\\SharedKernel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

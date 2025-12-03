@@ -55,3 +55,5 @@ C:\Users\Golan\Documents\AI-game-generator-agent\services\GameIdeaService\obj\De
 C:\Users\Golan\Documents\AI-game-generator-agent\services\GameIdeaService\obj\Debug\net9.0\GameIdeaService.pdb
 C:\Users\Golan\Documents\AI-game-generator-agent\services\GameIdeaService\obj\Debug\net9.0\GameIdeaService.genruntimeconfig.cache
 C:\Users\Golan\Documents\AI-game-generator-agent\services\GameIdeaService\obj\Debug\net9.0\ref\GameIdeaService.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GameIdeaService\bin\Debug\net9.0\SharedKernel.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GameIdeaService\bin\Debug\net9.0\SharedKernel.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dcxUw+ma/EE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Golan\\Documents\\AI-game-generator-agent\\services\\SharedKernel\\SharedKernel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Golan\\.nuget\\packages\\masstransit.abstractions\\8.5.7\\masstransit.abstractions.8.5.7.nupkg.sha512"
+  ],
+  "logs": []
+}

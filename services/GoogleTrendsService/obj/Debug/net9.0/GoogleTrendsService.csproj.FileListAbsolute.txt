@@ -31,3 +31,12 @@ C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\ob
 C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\obj\Debug\net9.0\GoogleTrendsService.pdb
 C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\obj\Debug\net9.0\GoogleTrendsService.genruntimeconfig.cache
 C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\obj\Debug\net9.0\ref\GoogleTrendsService.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\MassTransit.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\MassTransit.Abstractions.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\MassTransit.RabbitMqTransport.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\RabbitMQ.Client.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\SharedKernel.dll
+C:\Users\Golan\Documents\AI-game-generator-agent\services\GoogleTrendsService\bin\Debug\net9.0\SharedKernel.pdb

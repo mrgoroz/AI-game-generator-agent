@@ -86,18 +86,52 @@ Everything runs through a **LangGraph-style workflow** with nodes and transition
 
 ---
 
+# 🏗️ Microservices Overview
+
+The project is built using a microservices architecture, where each service has a specific responsibility.
+
+### [GoogleTrendsService](services/GoogleTrendsService)
+*   **What it does**: Identifies current trending topics on Google.
+*   **How it does it**: Simulates fetching data (to be replaced with real scraping/API). Publishes `TrendDetected` events via MassTransit/RabbitMQ.
+
+### [GameIdeaService](services/GameIdeaService)
+*   **What it does**: Generates unique game concepts based on trending topics.
+*   **How it does it**: Consumes `TrendDetected` events. Uses Groq (LLM) to brainstorm ideas. Stores ideas in Supabase. Publishes `GameIdeaGenerated` events.
+
+### [GameAssetService](services/GameAssetService)
+*   **What it does**: Generates visual and audio assets for the game.
+*   **How it does it**: (Planned) Will consume `GameIdeaGenerated` events and use AI models to create assets.
+
+### [GameCodeService](services/GameCodeService)
+*   **What it does**: Generates the actual source code for the game.
+*   **How it does it**: (Planned) Will consume `GameIdeaGenerated` events and use LLMs to write code.
+
+### [BuildService](services/BuildService)
+*   **What it does**: Compiles and bundles the game assets and code.
+*   **How it does it**: (Planned) Will take generated code and assets and produce a deployable build.
+
+### [DeploymentService](services/DeploymentService)
+*   **What it does**: Deploys the game to a hosting platform (e.g., GitHub Pages).
+*   **How it does it**: (Planned) Will take the build artifact and publish it.
+
+### [SharedKernel](services/SharedKernel)
+*   **What it does**: Contains shared code, interfaces, and event definitions used across all microservices to ensure consistency.
+
+---
+
 # 📁 Project Structure
 
 ```
-AgenticGameMaker/
+AI-game-generator-agent/
 │
-├── src/
-│   ├── AgenticGameMaker.Api/        # .NET Web API
-│   ├── AgenticGameMaker.Core/       # Agent logic + orchestration
-│   ├── AgenticGameMaker.LangChain/  # LangChain.NET integration
-│   └── AgenticGameMaker.Python/     # (Optional) LangGraph microservice
-│
-├── games/                           # Generated games
+├── services/
+│   ├── GoogleTrendsService/   # Fetches trends
+│   ├── GameIdeaService/       # Generates game ideas
+│   ├── GameAssetService/      # Generates assets
+│   ├── GameCodeService/       # Generates code
+│   ├── BuildService/          # Builds the game
+│   ├── DeploymentService/     # Deploys the game
+│   └── SharedKernel/          # Shared code & events
 │
 ├── README.md
 └── LICENSE
